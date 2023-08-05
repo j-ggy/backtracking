@@ -52,3 +52,4 @@ msg2 = postMessage(ezpz, "nice!", msg1)
 
 console.log(msg1)
 console.log(msg2)
+console.log("done")
