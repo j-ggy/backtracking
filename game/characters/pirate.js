@@ -1,16 +1,11 @@
-class Pirate {
+const Character = require("./character");
+const cannonBall = require("../abilities/cannonBall.js")
+
+class Pirate extends Character {
     constructor(name, className, attack, magic, defense, speed, health, mana) {
-        this.name = name;
-        this.className = className;
-        this.attack = attack;
-        this.magic = magic;
-        this.defense = defense;
-        this.speed = speed;
-        this.health = health;
-        this.mana = mana;
+        super(name, className, attack, magic, defense, speed, health, mana);
+        this.abilities = [cannonBall]
     }
 }
-
-// weapons: dagger, slingshot, bowling ball
 
 module.exports = Pirate;

@@ -1,16 +1,11 @@
-class Carnie {
+const Character = require("./character");
+const bbGun = require("../abilities/bbgun.js")
+
+class Carnie extends Character {
     constructor(name, className, attack, magic, defense, speed, health, mana) {
-        this.name = name;
-        this.className = className;
-        this.attack = attack;
-        this.magic = magic;
-        this.defense = defense;
-        this.speed = speed;
-        this.health = health;
-        this.mana = mana;
+        super(name, className, attack, magic, defense, speed, health, mana);
+        this.abilities = [bbGun];
     }
 }
-
-// weapons: air rifle, bean bag, spinning apple kick 
 
 module.exports = Carnie;
